@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
@@ -11,4 +11,30 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+</ion-content> -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Hola</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id="lineChart"></div>
+  <!-- <svg width="0" height="500" id="lineChart"></svg> -->
+  
+  <!-- <button ion-button round  class="Resistencia">Resistencia</button>
+  <button ion-button round  class="Soporte">Soporte</button> -->
+
+
+  <ion-segment [(ngModel)]="opcion" color="secondary">
+    <ion-segment-button value="resistencia">
+      <ion-icon name="arrow-up"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="soporte">
+      <ion-icon name="arrow-down"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <p>{{opcion}}</p>
 </ion-content>
